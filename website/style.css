@@ -99,6 +99,8 @@ header nav ul li a:hover {
     border-radius: 100%;
 
     background-color: #d9d9d9;
+
+    z-index: 1000;
 }
 
 .orange-circle {
@@ -111,6 +113,8 @@ header nav ul li a:hover {
     border-radius: 100%;
 
     background-color: #e5da75a6;
+
+    z-index: 20;
 }
 
 .home {
@@ -120,6 +124,8 @@ header nav ul li a:hover {
     color: white;
     
     padding: 13rem 7rem 4rem;
+
+    transition: .5s;
 }
 
 .home h1 {
@@ -148,6 +154,8 @@ header nav ul li a:hover {
     max-height: 300px;
     width: 100%;
     height: 100%;
+
+    transition: .5s;
 }
 
 .custom-shape-divider-top-1710606590 {
@@ -317,7 +325,127 @@ footer li {
 
 footer p {
     position: absolute;
+    left:50%;
+    transform: translate(-50%, -50%);
     bottom: 30px;
     color: var(--gray);
     font-weight: 600;
+
 }
+
+/* RESPONSIVO */
+
+
+@media (max-width: 1200px) {
+
+    .home h1 {
+        font-size: 4rem;
+    }
+
+    .home img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .home {
+        padding: 13rem 2rem 4rem;
+    }
+
+    .app-add {
+        margin-top: 10rem;
+        padding: 5rem 2rem;
+        background-color: var(--white);
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .home img {
+        position: absolute;
+        max-width: 200px;
+        right: 10px;
+        top: 400px;
+
+        z-index: 10;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .app-add {
+        gap: 4rem;
+        flex-direction: column;
+    
+        padding: 5rem 2rem;
+    }
+
+    .app-add a {
+        width: 100%;
+    }
+
+    .app-add h1 {
+        font-size: 2rem;
+    }
+
+    .app-add p {
+        width: 100%;
+    }
+
+    .app-info h1 {
+        font-size: 2rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        justify-items: flex-start;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header {
+        display: none;
+    }
+
+    .home img {
+        top: 500px;
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .home {
+        padding: 13rem 1rem 4rem;
+    }
+
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .orange-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+
+        top: 500px;
+        left: 80%;
+    
+        z-index: 20;
+    }
+
+    footer {
+        padding: 7rem 2rem 10rem;
+    }
+
+    footer p {
+        font-size: .7rem;
+
+    }
+}
+
