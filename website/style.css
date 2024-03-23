@@ -5,6 +5,10 @@
     --gray: #929292;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -23,14 +27,14 @@ a {
     transition: .2s;
 }
 
+ul {
+    list-style: none;
+}
+
 span {
     color: var(--orange);
 }
 
-section {
-    padding: 0 7rem;
-
-}
 
 /* HEADER  */
 
@@ -58,18 +62,15 @@ header h1 {
 header nav ul {
     display: flex;
     gap: 5rem;
-    list-style: none;
 }
 
 header nav ul li a {
     color: white;
-    text-decoration: none;
 }
 
 header nav ul li a:hover {
     color: var(--orange);
-    text-decoration: none;
-}
+}   
 
 /* HOME */
 
@@ -214,7 +215,7 @@ header nav ul li a:hover {
     background-position: center;
     background-size: coverx;
 
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 10rem;
 }
 
 .app-info h1 {
@@ -223,7 +224,6 @@ header nav ul li a:hover {
     font-size: 3rem;
     margin-bottom: 5rem;
 }
-
 
 .card-content {
     display: flex;
@@ -235,7 +235,6 @@ header nav ul li a:hover {
     max-width: 1400px;
     margin: 0 auto;
 }
-
 
 .card-content .card {
     background-color: white;
@@ -265,4 +264,44 @@ header nav ul li a:hover {
 
 .card-content .card p {
     margin: 3rem 2rem 0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    position: relative;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    padding: 7rem 2rem;
+}
+
+footer h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--orange);
+}
+
+footer li {
+    margin-bottom: .7rem;
+}
+
+footer p {
+    position: absolute;
+    bottom: 30px;
+    color: var(--gray);
+    font-weight: 600;
 }
