@@ -67,7 +67,7 @@ header {
     color: var(--orange);
     padding: 2rem 7rem;
 
-    z-index: 100;
+    z-index: 10001;
 }
 
 header h1 {
@@ -386,7 +386,11 @@ footer p {
     }
 
     .app-add h1 {
-        font-size: 2rem;
+        font-size: 1.9rem; 
+    }
+
+    .app-add br {
+        display: none;
     }
 
     .app-add p {
@@ -439,13 +443,21 @@ footer p {
         z-index: 20;
     }
 
+    .custom-shape-divider-top-1710606590 svg {
+        position: relative;
+        display: block;
+        width: calc(150% + 1.3px);
+        height: 100px;
+    }
+    
+
     footer {
         padding: 7rem 2rem 10rem;
     }
 
     footer p {
         font-size: .7rem;
-
+        align-items: center;
     }
 }
 
